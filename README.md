@@ -7,3 +7,17 @@ The crib engine will play out all the games from two player classes. The player 
 The final goal is to have people play their player classes against one another and see who wins.
 
 Crib Rules: http://en.wikipedia.org/wiki/Rules_of_cribbage
+
+How to run this???
+
+Download the souce files and store them in a local directory.
+
+Then run ruby crib.rb
+
+You should see the output.
+
+To run the tests:
+
+rspec spec
+
+Or you can test them one by one.
