@@ -98,6 +98,7 @@ class Counter
         final_numbers_to_check = numbers_to_check - [number2]
         final_numbers_to_check.each do |last_number|
           score_to_add += 2 if number1 + number2 + last_number == 15
+        end
       end
     end
     score += score_to_add/6 # add one sixth the score for counting the same combination six times
