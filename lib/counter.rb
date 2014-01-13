@@ -96,12 +96,10 @@ class Counter
       numbers_to_check = other_numbers - [number1]
       numbers_to_check.each do |number2|
         final_numbers_to_check = numbers_to_check - [number2]
-        final_numbers_to_check.each do |last_number|
-          score_to_add += 2 if number1 + number2 + last_number == 15
-        end
+       score_to_add += 2 if final_numbers_to_check.inject(:+) == 15
       end
     end
-    score += score_to_add/6 # add one sixth the score for counting the same combination six times
+    score += score_to_add/2 # add half the score for counting the same combination twice
 
     #check 4 card combos
     all_numbers.each do |number|
