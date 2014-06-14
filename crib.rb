@@ -16,15 +16,19 @@ game.flip_top_deck_card
 puts '...Crib Hand...'
 
 show_cards(game.crib)
+puts ''
 
 puts '...Player 1 Hand...'
 
 show_cards(game.player1.hand)
+puts ''
 
 puts '...Player 2 Hand...'
 
 show_cards(game.player2.hand)
+puts ''
 
 puts '...Top Card...'
 
 puts game.top_card.display_value
+puts ''
