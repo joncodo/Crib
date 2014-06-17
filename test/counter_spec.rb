@@ -104,7 +104,7 @@ describe Counter do
                              Card.new('5', 'Spaids'), 'crib')
     end
 
-    it 'has four points when you have a 4 card flushin your hand' do
+    it 'has four points when you have a 4 card flush in your hand' do
       expect(@flush_4.flush_score).to eq 4
     end
 

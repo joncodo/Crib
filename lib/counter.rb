@@ -92,8 +92,20 @@ class Counter
     score += score_to_add/2 # add half the score for counting the same card twice
 
     #check 3 card combos
+    all_numbers.each do |number1|
+      numbers_to_check = other_numbers - [number1]
+      numbers_to_check.each do |number2|
+        final_numbers_to_check = numbers_to_check - [number2]
+       score_to_add += 2 if final_numbers_to_check.inject(:+) == 15
+      end
+    end
+    score += score_to_add/2 # add half the score for counting the same combination twice
 
     #check 4 card combos
+    all_numbers.each do |number|
+      numbers_to_check = other_numbers - [number]
+      score_to_add += 2 if numbers_to_check.inject(:+) == 15
+    end
 
     #check 5 card combos
     score += 2 if all_numbers.inject(:+) == 15
