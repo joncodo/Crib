@@ -31,4 +31,4 @@ puts ''
 puts '...Top Card...'
 
 puts game.top_card.display_value
-puts ''
+puts 'YOYOYYOYOY'
