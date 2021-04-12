@@ -23,3 +23,5 @@ rspec spec
 Or you can test them one by one.
 
 PR test
+
+Tested.
